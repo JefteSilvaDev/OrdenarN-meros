@@ -1,0 +1,42 @@
+import javax.swing.JOptionPane;
+ 
+public class desafio {
+ 
+
+    public static void main(String[] args) { 
+         
+ 
+                int numero1;
+                int numero2;
+                int numero3;
+                int auxiliar;
+ 
+                numero1 = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 número"));
+                numero2 = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 número"));
+                numero3 = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 número"));
+ 
+                if (numero1 > numero2) {
+                    auxiliar = numero1;
+                    numero1 = numero2;
+                    numero2 = auxiliar;
+                }
+ 
+                if (numero2 > numero3) {
+                    auxiliar = numero2;
+                    numero2 = numero3;
+                    numero3 = auxiliar;
+ 
+                }
+                 
+             
+                if (numero1 > numero2) {
+                    auxiliar = numero1;
+                    numero1 = numero2;
+                    numero2 = auxiliar;
+                }
+                 
+                 
+                 
+                JOptionPane.showMessageDialog(null, "Os número em ordem crescente: " + numero1 + " " + numero2 + " " + numero3); 
+            }
+        }
